@@ -3,6 +3,9 @@ txt-shuffle
 
 Customisable text shuffling animations.
 
+[![txt-shuffle-demo](https://user-images.githubusercontent.com/880280/229361502-c8c1bf0a-8da8-4d1d-ab3a-b3fde4cacae7.gif)](https://brunoimbrizi.github.io/txt-shuffle/demo/animations)
+
+
 ## Install
 ```
 npm install txt-shuffle
