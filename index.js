@@ -1,4 +1,5 @@
-const { math, random } = require('canvas-sketch-util');
+const math = require('canvas-sketch-util/math');
+const random = require('canvas-sketch-util/random');
 const eases = require('eases');
 
 const directions = {
@@ -165,8 +166,8 @@ const shuffleLCD = ({
 	let _start 		= Date.now();
 	let _frame 		= 0;
 
-	let glyph, output, resolved;
-	let tidx, gidx, sidx;
+	let glyph, output, complete, resolved;
+	let tidx, sidx, ridx;
 	
 	const _onUpdate = () => {
 		if (Date.now() - _now < _delta) {

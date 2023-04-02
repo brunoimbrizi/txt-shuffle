@@ -1,6 +1,6 @@
 {
   "name": "txt-shuffle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Customisable text shuffling animations.",
   "main": "index.js",
   "license": "MIT",
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "babelify": "^10.0.0",
     "browserify": "^17.0.0",
     "canvas-hypertxt": "^1.0.1",
     "esmify": "^2.1.1",
@@ -23,7 +24,7 @@
   "scripts": {
     "demo:animations": "budo demo/animations/:bundle.js --live --dir demo/animations/",
     "demo:multiline": "budo demo/multiline/:bundle.js --live --dir demo/multiline/ -- -p esmify",
-    "build:animations": "browserify demo/animations/index.js -p esmify -p tinyify -o demo/animations/bundle.js",
+    "build:animations": "browserify demo/animations/index.js -t babelify -p tinyify -o demo/animations/bundle.js",
     "build:multiline": "browserify demo/multiline/index.js -p esmify -p tinyify -o demo/multiline/bundle.js"
   },
   "keywords": [
