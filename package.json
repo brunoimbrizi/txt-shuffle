@@ -1,0 +1,40 @@
+{
+  "name": "txt-shuffle",
+  "version": "1.0.0",
+  "description": "Customisable text shuffling animations.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Bruno Imbrizi",
+    "url": "https://github.com/brunoimbrizi"
+  },
+  "dependencies": {
+    "canvas-sketch-util": "^1.10.0",
+    "eases": "^1.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "tinyify": "^3.1.0",
+    "tweakpane": "^3.1.2"
+  },
+  "scripts": {
+    "demo:animations": "budo demo/animations/:bundle.js --live --dir demo/animations/",
+    "build:animations": "browserify demo/animations/index.js -t babelify -p tinyify -o demo/animations/bundle.js"
+  },
+  "keywords": [
+    "text",
+    "shuffle",
+    "scramble",
+    "flicker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brunoimbrizi/txt-shuffle.git"
+  },
+  "homepage": "https://github.com/brunoimbrizi/txt-shuffle",
+  "bugs": {
+    "url": "https://github.com/brunoimbrizi/txt-shuffle/issues"
+  }
+}

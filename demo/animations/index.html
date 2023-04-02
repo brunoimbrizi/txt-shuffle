@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>txt-shuffle</title>
+	<style type="text/css">
+		body {
+			background: #eee;
+		}
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			top: 50%;
+			left: calc((100vw - 300px) * 0.5);
+			transform: translate(-50%, -50%);
+		}
+		h3 {
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			border-bottom: 2px solid;
+			display: inline;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		a:hover {
+			color: #666;
+		}
+		.info, select {
+			font-family: sans-serif;
+			font-size: 14px;
+		}
+		.info {
+			margin: 10px;
+		}
+		span {
+			display: block;
+			margin: 10px 0;
+		}
+		pre {
+			position: absolute;
+			top: 40%;
+			left: 20px;
+			/*transform: translate(0, -100%);*/
+			font-size: 48px;
+			font-family: monospace;
+		}
+
+		/* tweakpane */
+		.tp-dfwv {
+			width: 300px !important;
+			height: 100%;
+			top: 0px !important;
+			right: 0px !important;
+		}
+		.tp-rotv {
+			height: 100%;
+			font-size: 12px !important;
+		}
+		.tp-rotv, .tp-fldv_t, .tp-fldv_c {
+			border-radius: 0px !important;
+		}
+		.tp-fldv_t {
+			height: 32px !important;
+		}
+		.tp-fldv-expanded {
+			margin-bottom: 6px;
+		}
+		.tp-lblv {
+			padding: 2px 4px;
+		}
+		:root {
+			--tp-font-family: monospace;
+		}
+	</style>
+</head>
+<body>
+	<pre> </pre>
+	<div class="info">
+		<a href="https://github.com/brunoimbrizi/txt-shuffle"><h3>txt-shuffle</h3></a>
+		<span>
+			shuffle : Two-tier animation. First shuffling through random characters and then resolving into the target text
+			<br />
+			shuffleLCD : Inspired by <a href="https://lcd.ertdfgcvb.xyz/" target="_blank">https://lcd.ertdfgcvb.xyz/</a>. It goes through every character in `glyphs` until it finds a match in the target text. 
+		</span>
+	</div>
+	<script src="bundle.js" async></script>
+</body>
+</html>

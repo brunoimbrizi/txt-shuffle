@@ -1,7 +1,7 @@
 txt-shuffle
 ===========
 
-Text shuffling animations [TODO description]
+Customisable text shuffling animations.
 
 ## Install
 ```
@@ -13,7 +13,7 @@ npm install txt-shuffle
 const { shuffle } = require('txt-shuffle');
 
 shuffle({ text: 'Hello world', fps: 5, onUpdate: (output) => {
-	console.log(output);
+  console.log(output);
 } });
 ```
 Output:
@@ -27,18 +27,21 @@ Hello world
 ```
 
 ## Demo
-[TODO]
 
-## Usage
+- [Demo: Animations](https://brunoimbrizi.github.io/txt-shuffle/demo/animations)
+
+## API
 
 #### `shuffle(options)`
+Starts a text shuffle animation in two tiers.
+First shuffling through random characters and then resolving into the target text.
 
 - `options`
 	- `text` (default `''`) text string
 	- `duration` (default `1`) duration of shuffle/resolve animation in seconds
-	- `delay` (default `0`) delay to start shuffline
+	- `delay` (default `0`) delay to start shuffling
 	- `delayResolve` (default `0.2`) delay to start resolving
-	- `fps` (default `30`) framerate
+	- `fps` (default `60`) framerate
 	- `glyphs` (see below) glyphs to use in the shuffle animation
 	- `animation` (default `show`) possible values: `show`, `hide`, `stay`
 	- `direction` (default `right`) possible values: `left`, `right`, `random`
@@ -51,12 +54,13 @@ Hello world
 ```
 
 #### `shuffleLCD(options)`
-An attempt to recreate the effect in [LCD 1 by ertdfgcvb](https://lcd.ertdfgcvb.xyz/)
+Starts a text shuffle animation inspired by https://lcd.ertdfgcvb.xyz/
+It goes through every character in `glyphs` until it finds a match in the target text.
 
 - `options`
 	- `text` (default `''`) text string
 	- `delay` (default `0`) delay to start shuffline
-	- `fps` (default `30`) framerate
+	- `fps` (default `60`) framerate
 	- `glyphs` (see below) glyphs to use in the shuffle animation
 	- `animation` (default `show`) possible values: `show`, `hide`, `stay`
 	- `stayFrames` (default `25`) max number of frames in the `stay` animation
