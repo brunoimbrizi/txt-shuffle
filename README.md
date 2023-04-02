@@ -23,8 +23,8 @@ Output:
 
 ```
 kE}3 7
-Hep|> k|dJ 
-Hello GUAo_
+Hep|> |dJ 
+Hello UAo_
 Hello worlz
 Hello world
 ```
@@ -32,6 +32,7 @@ Hello world
 ## Demo
 
 - [Demo: Animations](https://brunoimbrizi.github.io/txt-shuffle/demo/animations)
+- [Demo: Multiline (Canvas)](https://brunoimbrizi.github.io/txt-shuffle/demo/multiline)
 
 ## API
 

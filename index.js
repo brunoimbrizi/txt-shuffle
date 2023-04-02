@@ -175,7 +175,7 @@ const shuffleLCD = ({
 		}
 
 		_now = Date.now();
-		_frame++;
+		if (_now - _start > delay * 1000) _frame++;
 
 		output = '';
 		resolved = 0;

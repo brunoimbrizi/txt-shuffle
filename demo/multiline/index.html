@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Demo : Animations</title>
+	<title>Demo : Multiline</title>
 	<style type="text/css">
 		body {
 			background: #eee;
+		}
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
 		}
 		h3 {
 			text-transform: uppercase;
@@ -29,13 +35,6 @@
 		span {
 			display: block;
 			margin: 10px 0;
-		}
-		pre {
-			position: absolute;
-			top: 40%;
-			left: 20px;
-			font-size: 48px;
-			font-family: monospace;
 		}
 
 		/* tweakpane */
@@ -67,14 +66,11 @@
 	</style>
 </head>
 <body>
-	<pre> </pre>
+	<canvas> </canvas>
 	<div class="info">
 		<a href="https://github.com/brunoimbrizi/txt-shuffle"><h3>txt-shuffle</h3></a>
-		<span>
-			shuffle : Two-tier animation. First shuffling through random characters and then resolving into the target text
-			<br />
-			shuffleLCD : Inspired by <a href="https://lcd.ertdfgcvb.xyz/" target="_blank">https://lcd.ertdfgcvb.xyz/</a>. It goes through every character in `glyphs` until it finds a match in the target text. 
-		</span>
+		<span>Click to play next example</span>
+		<span class="preset"></span>
 	</div>
 	<script src="bundle.js" async></script>
 </body>
