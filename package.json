@@ -1,6 +1,6 @@
 {
   "name": "txt-shuffle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Customisable text shuffling animations.",
   "main": "index.js",
   "license": "MIT",

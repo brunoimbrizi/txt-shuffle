@@ -57,25 +57,6 @@ First shuffling through random characters and then resolving into the target tex
  !#$&%()*+0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuüvwxyz{|}~
 ```
 
-#### `shuffleLCD(options)`
-Starts a text shuffle animation inspired by https://lcd.ertdfgcvb.xyz/
-It goes through every character in `glyphs` until it finds a match in the target text.
-
-- `options`
-	- `text` (default `''`) text string
-	- `delay` (default `0`) delay to start shuffline
-	- `fps` (default `60`) framerate
-	- `glyphs` (see below) glyphs to use in the shuffle animation
-	- `animation` (default `show`) possible values: `show`, `hide`, `stay`
-	- `stayFrames` (default `25`) max number of frames in the `stay` animation
-	- `onUpdate` callback function, returns the output string
-	- `onComplete` callback function, returns the output string
-
-`glyphs` default 
-```
- \'"“”‘’¹²³!#$&%()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuüvwxyz{|}~½¼¡«»×░▒▓│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌
-```
-
 ## License
 
 MIT, see [LICENSE](LICENSE) for details.

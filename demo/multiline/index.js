@@ -1,4 +1,4 @@
-const { shuffle, shuffleLCD, directions, animations } = require('../../index.js');
+const { shuffle, shuffleScroll, directions, animations } = require('../../index.js');
 const { split } = require('canvas-hypertxt');
 const Tweakpane = require('tweakpane');
 
@@ -22,7 +22,7 @@ const presets = [
 	{ fn: 'shuffle' },
 	{ fn: 'shuffle', glyphs: '▂▄▆', fps: 40 },
 	{ fn: 'shuffle', glyphs: 'weruoaszxcvnm', direction: directions.RANDOM },
-	{ fn: 'shuffleLCD', fps: 40 },
+	// { fn: 'shuffleScroll', fps: 40 },
 ];
 
 const setup = () => {

@@ -1,4 +1,4 @@
-const { shuffle, shuffleLCD, directions, animations } = require('../../index.js');
+const { shuffle, shuffleScroll, directions, animations } = require('../../index.js');
 const Tweakpane = require('tweakpane');
 
 const paramsA = {
@@ -40,11 +40,11 @@ const playShuffle = () => {
 	shuffle({ text, duration, fps, glyphs, direction, animation, onUpdate });
 };
 
-const playShuffleLCD = () => {
+const playShuffleScroll = () => {
 	const { text, fps, nglyphs, stayFrames, animation } = paramsB;
 	const glyphs = nglyphs.length ? nglyphs : undefined;
 
-	shuffleLCD({ text, fps, glyphs, stayFrames, animation, onUpdate });
+	shuffleScroll({ text, fps, glyphs, stayFrames, animation, onUpdate });
 };
 
 const createPane = () => {
@@ -60,13 +60,15 @@ const createPane = () => {
 	folder.addInput(paramsA, 'nglyphs', { label: 'glyphs'});
 	folder.addButton({ title: 'SHUFFLE', label: 'play' }).on('click', playShuffle);
 
-	folder = pane.addFolder({ title: 'SHUFFLE LCD' });
+	/*
+	folder = pane.addFolder({ title: 'SHUFFLE SCROLL' });
 	folder.addInput(paramsB, 'text');
 	folder.addInput(paramsB, 'fps', { min: 1, max: 60, step: 1 });
 	folder.addInput(paramsB, 'animation', { options: animations });
 	folder.addInput(paramsB, 'stayFrames', { min: 1, max: 60, step: 1 });
 	folder.addInput(paramsB, 'nglyphs', { label: 'glyphs'});
-	folder.addButton({ title: 'SHUFFLE LCD', label: 'play' }).on('click', playShuffleLCD);
+	folder.addButton({ title: 'SHUFFLE SCROLL', label: 'play' }).on('click', playShuffleScroll);
+	*/
 };
 
 setup();

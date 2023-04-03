@@ -134,7 +134,7 @@ const shuffle = ({
  * onComplete					- callback function, returns the output string
  */
 
-const shuffleLCD = ({
+const shuffleScroll = ({
 	text 					= '',
 	delay 				= 0,
 	fps 					= 60,
@@ -231,5 +231,5 @@ module.exports = {
 	animations,
 	directions,
 	shuffle,
-	shuffleLCD,
+	shuffleScroll,
 };
